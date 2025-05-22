@@ -2,9 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Wireless Headphones - ShopSmart</title>
+  <title>Bottle1 - ShopSmart</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    .product-detail-container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .product-detail-container {
+        flex-direction: row;
+      }
+    }
+
+    .product-image {
+      flex: 1;
+    }
+
+    .product-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-info {
+      flex: 2;
+      padding: 0 1rem;
+    }
+
+    .product-info h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .product-info p.description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+
+    .product-price {
+      font-size: 1.5rem;
+      color: #e74c3c;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-buy {
+      background-color: #2ecc71;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-buy:hover {
+      background-color: #27ae60;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin: 2rem auto 0;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    .back-link a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
@@ -12,27 +94,31 @@
     <h1>ShopSmart</h1>
     <nav>
       <a href="../index.html">Home</a>
-      <a href="../about.html">About</a>
-      <a href="../contact.html">Contact</a>
+      <a href="#">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
     </nav>
   </header>
 
-  <section class="products-section">
-    <h2 class="section-title">Wireless Headphones</h2>
-    <div class="products-grid">
-      <div class="product-card">
-        <img src="images/headphone.png" alt="Headphones" />
-        <div class="product-info">
-          <h3>Wireless Headphones</h3>
-          <p>Enjoy crystal-clear audio with long battery life. Compact and stylish design.</p>
-          <p><strong>Price:</strong> ₹499</p>
-          <a href="../cart/add-to-cart.html">
-            <button>Add to Cart</button>
-          </a>
-        </div>
-      </div>
+  <section class="product-detail-container">
+    <div class="product-image">
+      <img src="../images/bottle1.png" alt="Bottle1 - Stylish Insulated Bottle" />
+    </div>
+    <div class="product-info">
+      <h1>Bottle1 - Stylish Insulated Bottle</h1>
+      <p class="description">
+        Stay hydrated in style with Bottle1, the perfect fusion of elegance and function.
+        Designed with double-walled insulation, it keeps beverages cold for 24 hours and hot for 12 hours.
+        The sleek matte finish, leak-proof cap, and eco-friendly stainless steel body make it a must-have for travel, work, or workouts.
+      </p>
+      <div class="product-price">₹499</div>
+      <button class="btn-buy">Buy Now</button>
     </div>
   </section>
+
+  <div class="back-link">
+    <a href="../index.html">&larr; Back to Home</a>
+  </div>
 
   <footer>
     &copy; 2025 ShopSmart. All rights reserved.
