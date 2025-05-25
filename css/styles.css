@@ -19,8 +19,10 @@ header {
   align-items: center;
 }
 
-header h1 {
+header h1 a{
   font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
 }
 
 nav a {
@@ -149,6 +151,16 @@ footer {
   font-size: 0.9rem;
 }
 
+footer .footer-container .footer-section-div{
+  display: flex;
+  justify-content: center;
+  gap:4rem;
+}
+
+ul{
+  list-style-type: none;
+}
+
 .cursor {
   display: inline-block;
   color: white;
@@ -161,3 +173,5 @@ footer {
     opacity: 0;
   }
 }
+
+
